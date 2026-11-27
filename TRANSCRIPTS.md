@@ -43,6 +43,28 @@ election date, Macy's postponement, Ukraine–Russia prisoner swap).
   code bars; "$" with prohibition ring). First render had stripes
   overflowing panel boxes; fixed by clipping each stripe segment to
   the panel box. 1024×1024, 181,176 bytes, deterministic.
+- **v3 submitted** 27 Nov 09:16 WIB (GO Firt): submission
+  01a21aca-7264-70af-abe6-1959a78e1818, stage checked. Dev score
+  97.28%, rank #1,906/8,572 at 28 Nov 04:17 WIB, line #50 98.65%.
+- **v4** (28 Nov ~04:27 WIB): 39 stories, top-style. Added the big
+  26 Nov stories as Friday stories (Kuwait, Gaza 10 dead, UK migration,
+  Depardieu, Ibiza, Trump GDP, Bangkok, Kim, Cairo, DAX +2.2%), drawn
+  scenes instead of medallions, timeline UTC, KPI 6, regions strip,
+  map pins fixed to match story numbers. 1024×1024, 190,133 bytes.
+  NOT submitted. The judge rules (RULES.txt) say the day's news is
+  events that happened or were first reported on 27 Nov, so v4
+  violates criteria 1/3/4 as written, even though top entries do the
+  same and score higher in dev.
+- **v5** (28 Nov ~04:37 WIB): 39 stories, all dated Friday 27 Nov
+  2026, following the judge criteria as written. v4's 26 Nov stories
+  removed and replaced with verified Friday stories (Hamas chief's
+  son survives a Friday strike; China stocks STAR 50 +15%; Cloud One
+  hack; EU budget collapse; India-US trade; Canary boat 8 dead;
+  Nigeria 17 dead; NZ v India 246-5; CPTPP; Trump backs Iraqi PM;
+  Russian flotilla; Guangxi; Spain snap vote; Duterte evidence batch).
+  DAX fixed to Friday figures, prisoner swap removed, map pins
+  offset for clusters. 1024×1024, 195,047 bytes, deterministic.
+  Submitted as the final entry on Firt's GO, 28 Nov 2026.
 
 ## Honesty caveats (kept in the image's date-check box)
 
@@ -56,6 +78,12 @@ election date, Macy's postponement, Ukraine–Russia prisoner swap).
 - The AI judge has no news feed and competitors claim Thursday stories
   as 27 Nov, so their pages can look "fuller". This entry is
   date-honest and thinner on the cycle's biggest stories by design.
+- v5 borderline items, disclosed in the workspace audit: EU budget
+  collapse (talks collapsed Thursday, reported Friday), Iran's
+  statement (Friday statement about a Thursday event), Spain snap
+  vote (BBC explainer Friday, vote Sunday), Duterte evidence batch
+  (disclosed Friday, trial 30 Nov). Each is dated by its Friday
+  report, not by the underlying event alone.
 
 ## Verification
 

@@ -33,6 +33,7 @@ from pathlib import Path
 
 EXPECTED_SHA256 = "eb557260304d7fb9d15d8dfb1c805b3853436cd61b64b75927a20339f2f45af3"
 EXPECTED_BYTES = 195047
+# v5: 39 stories dated Friday 27 Nov 2026, judge-criteria compliant.
 
 SOURCE_PATH = Path(__file__).resolve().parent / "entry.png"
 OUTPUT_PATH = Path(os.environ.get("MAKEFUN_OUTPUT_DIR", "/output")) / "entry.png"

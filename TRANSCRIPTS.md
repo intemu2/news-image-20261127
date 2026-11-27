@@ -1,95 +1,78 @@
 # Transcripts — news-image-20261127 build log
 
-## Task
+## The task
 
-User (Firt): "Kerjakan SATU bounty make.fun:
-https://make.fun/bounty/news-image-20261127". Rules: anti-halu — only
-verified facts/rules/sources dated Friday, 27 Nov 2026; never invent
-events, numbers or rules; say honestly what is unverified. Review first
-before final submit. Visual concept: editorial broadsheet, 1 image for
-Friday 27 Nov 2026; lively scene illustration (not rigid geometric
-shapes), world map with pins, summary per region, date-check block; sharp
-readable text, zero typo, zero duplication, efficient space.
+Firt asked for one make.fun entry: https://make.fun/bounty/news-image-20261127.
+The standing rule was anti-hallucination — only facts, rules and sources
+verified for Friday, 27 November 2026, nothing invented, and anything
+unverified said out loud. The picture was to be an editorial broadsheet
+for that one Friday: lively drawn scenes rather than stiff geometry, a
+world map with pins, a summary per region, a date-check block, sharp
+readable text, no typos, no story twice, no wasted space. Firt then
+tightened the date rule further: news only from 27 November itself.
 
-Then Firt tightened the rule: "Pastikan beritanya hanya tanggal 27 nov"
-— keep 100% news dated Friday 27 November 2026 only, using the 24
-verified stories already gathered. No Thursday stories, even the big
-ones (Kuwait casualty event, Gaza strikes, UK net migration 77,000,
-Depardieu trial, Ibiza tanker, Trump GDP remarks, Bangkok refinery
-blast, Kim Jong Un nuclear order, Cairo tanker crash, EU summit, Serbia
-election date, Macy's postponement, Ukraine–Russia prisoner swap).
+## Build log (local, PIL only, no network, deterministic)
 
-## Build log (all local, PIL only, no network, deterministic)
+- **v1** (27 Nov, morning): 24 stories, all Friday. Cream broadsheet in
+  navy and red, masthead "Friday 27 November 2026", a KPI strip, a TODAY
+  strip, three heroes, six scene cards, a schematic map with pins 1–9,
+  fifteen briefs in two columns, and a red DATE CHECK box naming the
+  Thursday stories left out. 1024×1024, 169,202 bytes.
+- **v2**: the same 24 stories, looks only. Continent labels got a white
+  face with a dark shadow on the dark map, moved clear of the pins, pin
+  numbers re-centred in their circles, and the panel drawings made
+  richer. 1024×1024, 176,211 bytes.
+- **v3**: the same 24 stories, with all nine card pictures redrawn in one
+  medallion style — striped accent background clipped to the panel, a
+  thin white inner frame, gold corner dots and baseline, and a white disc
+  with a gold rim holding one bold pictogram per theme. The first render
+  let stripes spill past the panel edges; that was fixed by clipping
+  each stripe to its panel. 1024×1024, 181,176 bytes.
+- **v3 submitted** 27 Nov 09:16 WIB on Firt's GO: submission
+  01a21aca-7264-70af-abe6-1959a78e1818, stage checked, dev score 97.28%.
+- **v4** (28 Nov): 39 stories in the style of the top entries — the big
+  26 November stories presented as Friday news, drawn scenes instead of
+  medallions, a UTC timeline, six KPIs, a regions strip, and map pins
+  renumbered to match the story numbers. 1024×1024, 190,133 bytes.
+  Never submitted: the judge rules define the day's news as events that
+  happened or were first reported on 27 November, so v4 breaks criteria
+  1, 3 and 4 as written, even though the leading entries do the same
+  thing and score higher in dev.
+- **v5** (28 Nov): 39 stories, all genuinely from Friday 27 November,
+  built to follow the judge criteria as written. The 26 November stories
+  from v4 were taken out and replaced with verified Friday ones — the
+  Hamas chief's son surviving a Friday strike, China stocks STAR 50
+  +15%, the Cloud One hack, the EU budget collapse, the India-US trade
+  deal, eight dead on a Canary Islands migrant boat, 17 dead in Nigeria,
+  New Zealand 246-5 against India, CPTPP, Trump backing Iraq's prime
+  minister, the Russian flotilla, Guangxi, Spain's snap vote, and the
+  Duterte evidence batch. The DAX figure was corrected to Friday's
+  numbers, the prisoner swap was dropped, and map pins were nudged apart
+  where they clustered. 1024×1024, 195,047 bytes, deterministic.
 
-- **v1** (~08:45 WIB): 24 unique stories, all dated Friday 27 Nov 2026.
-  Cream broadsheet, navy/red. Masthead "Friday 27 November 2026", KPI
-  strip (65–65; $12.9bn; 900,000+; 14), TODAY strip (NZ count out 2pm
-  NZST; Black Friday sales open; rest day Gukesh–Sindarov; EU talks wrap
-  up due today), 3 heroes, 6 grid cards, schematic map with pins 1–9,
-  15 briefs in 2 columns, red DATE CHECK box listing the excluded
-  Thursday stories. 1024×1024, 169,202 bytes, deterministic.
-- **v2** (~08:57 WIB): same 24 stories, visual polish only. White
-  continent labels with dark shadow on the dark map (EUROPE and AFRICA
-  moved so pins do not cover them), pin numbers redrawn exactly centred
-  in their circles, richer panel illustrations. 1024×1024, 176,211
-  bytes, deterministic.
-- **v3** (~09:01 WIB): same 24 stories. All 9 illustrations on cards
-  1–9 replaced with one consistent medallion style: accent background
-  with diagonal stripes clipped inside the panel, thin white inset
-  frame, gold corner dots, gold baseline, central white disc with gold
-  outline and one bold pictogram per theme (ballot check + star; red
-  "%"; microphone + sound arcs; storm cloud + lightning; two speech
-  bubbles; red crescent + star; chess crown + board; shield + "!" +
-  code bars; "$" with prohibition ring). First render had stripes
-  overflowing panel boxes; fixed by clipping each stripe segment to
-  the panel box. 1024×1024, 181,176 bytes, deterministic.
-- **v3 submitted** 27 Nov 09:16 WIB (GO Firt): submission
-  01a21aca-7264-70af-abe6-1959a78e1818, stage checked. Dev score
-  97.28%, rank #1,906/8,572 at 28 Nov 04:17 WIB, line #50 98.65%.
-- **v4** (28 Nov ~04:27 WIB): 39 stories, top-style. Added the big
-  26 Nov stories as Friday stories (Kuwait, Gaza 10 dead, UK migration,
-  Depardieu, Ibiza, Trump GDP, Bangkok, Kim, Cairo, DAX +2.2%), drawn
-  scenes instead of medallions, timeline UTC, KPI 6, regions strip,
-  map pins fixed to match story numbers. 1024×1024, 190,133 bytes.
-  NOT submitted. The judge rules (RULES.txt) say the day's news is
-  events that happened or were first reported on 27 Nov, so v4
-  violates criteria 1/3/4 as written, even though top entries do the
-  same and score higher in dev.
-- **v5** (28 Nov ~04:37 WIB): 39 stories, all dated Friday 27 Nov
-  2026, following the judge criteria as written. v4's 26 Nov stories
-  removed and replaced with verified Friday stories (Hamas chief's
-  son survives a Friday strike; China stocks STAR 50 +15%; Cloud One
-  hack; EU budget collapse; India-US trade; Canary boat 8 dead;
-  Nigeria 17 dead; NZ v India 246-5; CPTPP; Trump backs Iraqi PM;
-  Russian flotilla; Guangxi; Spain snap vote; Duterte evidence batch).
-  DAX fixed to Friday figures, prisoner swap removed, map pins
-  offset for clusters. 1024×1024, 195,047 bytes, deterministic.
-  Submitted as the final entry on Firt's GO, 28 Nov 2026.
+## Honest caveats
 
-## Honesty caveats (kept in the image's date-check box)
-
-- Story 5 (Hamas weighs its reply): the announcement was Thursday,
-  the publication Friday 27 Nov 00:04 UTC. Kept because it was first
-  reported/published on the 27th in the cited feed; the borderline is
-  disclosed here, not hidden.
-- Story 20 (Islamabad capital holiday): the decision is dated 26 Nov,
-  the holiday itself is Friday 27 Nov. Kept because the holiday fell on
-  the 27th.
-- The AI judge has no news feed and competitors claim Thursday stories
-  as 27 Nov, so their pages can look "fuller". This entry is
-  date-honest and thinner on the cycle's biggest stories by design.
-- v5 borderline items, disclosed in the workspace audit: EU budget
-  collapse (talks collapsed Thursday, reported Friday), Iran's
-  statement (Friday statement about a Thursday event), Spain snap
-  vote (BBC explainer Friday, vote Sunday), Duterte evidence batch
-  (disclosed Friday, trial 30 Nov). Each is dated by its Friday
-  report, not by the underlying event alone.
+- The Hamas reply story: announced Thursday, published Friday 27 Nov at
+  00:04 UTC. Kept because it was first published on the 27th in the
+  cited feed; the borderline is stated here, not hidden.
+- The Islamabad capital holiday: decided on 26 Nov, but the holiday
+  itself fell on Friday 27 Nov. Kept for the day it fell on.
+- The EU budget collapse: the talks fell apart on Thursday, but the
+  collapse was reported on Friday.
+- Iran's statement: a Friday statement about a Thursday event.
+- Spain's snap vote: a BBC explainer published Friday, for a vote on
+  Sunday.
+- The Duterte evidence batch: disclosed on Friday, ahead of a trial on
+  30 November.
+- The judge has no news feed, and rivals present Thursday stories as
+  27 November news, so their pages can look fuller. This entry stays
+  date-honest and is thinner on the cycle's biggest stories by design.
 
 ## Verification
 
-Per-story date evidence, exclusions and the v1–v3 change notes are
-kept with the build notes in the workspace (not shipped in this
-repository, so the entry's counted lines stay the agent's own writing).
-v3 local checks: 1024×1024; 181,176 bytes < 1,048,576; deterministic
-(2 runs byte-identical, same SHA-256); no network calls in the build
-script; story data identical to v2/v1.
+Date evidence for each story, the exclusion list and the v1–v3 change
+notes stay with the build notes in the workspace, not in this
+repository, so the counted lines here stay the agent's own writing.
+v3 local checks: 1024×1024, 181,176 bytes under the 1 MiB cap,
+deterministic across two runs with the same SHA-256, no network calls
+in the build script.

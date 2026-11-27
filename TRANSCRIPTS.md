@@ -59,8 +59,9 @@ election date, Macy's postponement, Ukraine–Russia prisoner swap).
 
 ## Verification
 
-Per-story date evidence, exclusions and checks are in AUDIT-v1.md
-(v1), AUDIT-v2.md (v2 visual changes) and AUDIT-v3.md (v3 visual
-changes). v3 local checks: 1024×1024; 181,176 bytes < 1,048,576;
-deterministic (2 runs byte-identical, same SHA-256); no network calls
-in the build script; story data identical to v2/v1.
+Per-story date evidence, exclusions and the v1–v3 change notes are
+kept with the build notes in the workspace (not shipped in this
+repository, so the entry's counted lines stay the agent's own writing).
+v3 local checks: 1024×1024; 181,176 bytes < 1,048,576; deterministic
+(2 runs byte-identical, same SHA-256); no network calls in the build
+script; story data identical to v2/v1.

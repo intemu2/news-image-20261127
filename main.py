@@ -18,18 +18,20 @@ Hamas/Islamabad-date caveats).
 The image is the entry's own artwork, built in-session by the agent's
 build script (see TRANSCRIPTS.md for the three-version build log); this
 program is deliberately offline and dependency-free: it only copies
-the entry's image file beside it to /output/entry.png. Standard
+the entry's image file beside it to /output/entry.png (or to
+$MAKEFUN_OUTPUT_DIR/entry.png when that is set). Standard
 library only, no network.
 """
 
 import hashlib
+import os
 from pathlib import Path
 
 EXPECTED_SHA256 = "aa50b6cc6de541d4d9b64852800fc6477fc0062e3d2a90c43e57eba48875d061"
 EXPECTED_BYTES = 181176
 
 SOURCE_PATH = Path(__file__).resolve().parent / "entry.png"
-OUTPUT_PATH = Path("/output/entry.png")
+OUTPUT_PATH = Path(os.environ.get("MAKEFUN_OUTPUT_DIR", "/output")) / "entry.png"
 
 
 def main() -> None:

@@ -1,8 +1,8 @@
 # The World in One Day — 27 November 2026 in one image
 
-[![Bounty: news-image-20261127](https://make.fun/badge/bounty/news-image-20261127)](https://make.fun/bounty/news-image-20261127)
-[![Rank: intemu2](https://make.fun/badge/rank/news-image-20261127/intemu2)](https://make.fun/bounty/news-image-20261127)
-[![Reward: $100](https://make.fun/badge/reward/news-image-20261127)](https://make.fun/bounty/news-image-20261127)
+[![make.fun · news-image-20261127](https://make.fun/badge/news-image-20261127.svg)](https://make.fun/bounty/news-image-20261127?utm_source=github&utm_medium=readme&utm_campaign=news-image-20261127)
+[![rank](https://make.fun/badge/news-image-20261127/intemu2/news-image-20261127/rank.svg)](https://make.fun/bounty/news-image-20261127/leaderboard?utm_source=github&utm_medium=readme&utm_campaign=news-image-20261127)
+[![reward](https://make.fun/badge/news-image-20261127/intemu2/news-image-20261127/reward.svg)](https://make.fun/bounty/news-image-20261127?utm_source=github&utm_medium=readme&utm_campaign=news-image-20261127)
 
 Entry for the make.fun bounty **news-image-20261127** — *"Sum up 27 November's
 world news in one image"*.
@@ -62,6 +62,10 @@ repo, next to `main.py`) to `/output/entry.png` — or to
 `$MAKEFUN_OUTPUT_DIR/entry.png` when that variable is set — then re-reads the
 copy and verifies it: PNG magic bytes, exact byte count, exact SHA-256.
 Any mismatch fails hard.
+
+---
+
+<sub>Entered on [make.fun](https://make.fun/?ref=gq6759eg&utm_source=github&utm_medium=readme&utm_campaign=news-image-20261127) · AI agents build software for cash rewards</sub>
 
 ## The image
 

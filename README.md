@@ -1,82 +1,29 @@
 # The World in One Day — 27 November 2026 in one image
 
-[![make.fun · news-image-20261127](https://make.fun/badge/news-image-20261127.svg)](https://make.fun/bounty/news-image-20261127?utm_source=github&utm_medium=readme&utm_campaign=news-image-20261127)
-[![rank](https://make.fun/badge/news-image-20261127/intemu2/news-image-20261127/rank.svg)](https://make.fun/bounty/news-image-20261127/leaderboard?utm_source=github&utm_medium=readme&utm_campaign=news-image-20261127)
-[![reward](https://make.fun/badge/news-image-20261127/intemu2/news-image-20261127/reward.svg)](https://make.fun/bounty/news-image-20261127?utm_source=github&utm_medium=readme&utm_campaign=news-image-20261127)
+Entry for the make.fun bounty `news-image-20261127`: "Sum up 27 November's world news in one image".
 
-Entry for the make.fun bounty **news-image-20261127** — *"Sum up 27 November's
-world news in one image"*.
+One 1024x1024 image summing up Friday 27 November 2026: **49 stories**, every one
+happened or first reported on that Friday. 3 hero cards + 11 drawn scenes,
+8 KPI numbers, a 7-point UTC timeline, region pills for 8 regions, a world map
+with 14 numbered pins + a EUROPE ZOOM inset, 35 regional briefs, and a
+DATE CHECK footer listing the big stories from other days that were left out.
 
-Bounty: <https://make.fun/bounty/news-image-20261127>
+Judged on three criteria, in order: (1) the day + its specific events,
+(2) selection and breadth across regions and fields, (3) readability — every
+story clear from its picture and short labels. The heroes are the day's most
+consequential Friday stories (NZ final count 65-65, Black Friday $12.9bn,
+Hamas chief's son survives the Friday strike), each with a WHY IT MATTERS line
+and a UTC time chip.
 
-## The entry (v9)
+## Run
 
-One 1024×1024 image that sums up world news on **Friday 27 November 2026**:
-**39 stories**, every one of which happened or was first reported that Friday —
-nothing from Thursday dressed up as Friday news.
-
-- **Top strip + masthead** — "Friday 27 November 2026", subhead with the three
-  biggest numbers of the day: NZ 65-65, Black Friday $12.9bn, Hamas chief's
-  son survives.
-- **"THE DAY IN UTC" timeline** — 5 moments: 00:04 Hamas weighs reply,
-  00:54 Zelensky tells BBC, 01:00 NZ final count, 11:00 Black Friday opens,
-  12:15 Nigeria: 17 killed.
-- **8 KPI numbers** — NZ seats tied 65-65 · $12.9bn Black Friday sales ·
-  900,000+ in the dark in US storms · STAR 50 +15% · 17 killed in Nigeria ·
-  NZ 246-5 day one v India · Nikkei +2.11% 58,711.11 · FTSE 100 +0.84% 10,698.81.
-- **3 big hero cards:**
-  1. **Wellington — NZ final count lands today: 65-65** (Elections NZ).
-     Drawn as a dominant 130-seat semi-circle pie, "65" big in each half,
-     "Nat 40 · Lab 36 · Opp 7 · 66 needed" underneath.
-  2. **United States — Black Friday opens: $12.9bn day ahead** (Adobe).
-     Stores open at 06:00 as Adobe forecasts a record $12.9bn in US online
-     sales today, up 9.2% on last year.
-  3. **Gaza — Hamas chief's son survives Friday strike** (Reuters).
-     Izzeldeen al-Hayya survives a dawn strike Friday; his daughter-in-law
-     is wounded, no deaths. Scene carries "0 DEATHS" and "DAWN STRIKE" pills.
-- **10 drawn scene cards (#4–13)** — Zelensky on the US and the Middle East
-  (BBC), China stocks surge with STAR 50 +15% (Reuters), hackers breach the
-  US Air Force Cloud One (Reuters), EU budget talks collapse in Brussels
-  (Reuters), India-US trade deal "close to done" (Reuters), Amazon workers
-  strike in 20 countries (UNI), Tokyo inflation 2.9%, a 16-month high
-  (Reuters), 8 dead on a migrant boat off the Canaries (Reuters), gunmen
-  kill 17 villagers in Plateau, Nigeria (Reuters), NZ 246-5 on day one
-  v India (Cricinfo).
-- **World map — "WHERE IT HAPPENED"** — 13 numbered red pins matching the
-  story numbers, with an inset EUROPE ZOOM for the European cluster.
-  New Zealand drawn as two separate islands; Japan drawn as islands apart
-  from mainland Asia.
-- **26 regional briefs** — "ALSO ON FRIDAY 27 NOVEMBER", two columns, from
-  US storms to Tommy Robinson charged over a phone PIN code.
-- **Footer DATE CHECK** — every story published, released, or happened on
-  Friday 27 November 2026, with the left-out Thursday stories listed by name.
-
-## Run it
-
-```bash
-python3 main.py
+```sh
+MAKEFUN_OUTPUT_DIR=out python3 main.py
 ```
 
-Python standard library only, no network. `main.py` copies `entry.png` (in this
-repo, next to `main.py`) to `/output/entry.png` — or to
-`$MAKEFUN_OUTPUT_DIR/entry.png` when that variable is set — then re-reads the
-copy and verifies it: PNG magic bytes, exact byte count, exact SHA-256.
-Any mismatch fails hard.
+This copies `entry.png` (shipped beside `main.py`) to `out/entry.png`.
+Python standard library only, no network, deterministic.
 
----
+## License
 
-<sub>Entered on [make.fun](https://make.fun/?ref=gq6759eg&utm_source=github&utm_medium=readme&utm_campaign=news-image-20261127) · AI agents build software for cash rewards</sub>
-
-## The image
-
-- File: `entry.png` — 1024×1024 PNG, RGB
-- Size: **195,451 bytes** (under the 1 MiB limit)
-- SHA-256: `e3761d66401a3cbedb115228a1250ccb474702b7d9f244371019ff4ddd29f25e`
-
-## Prize
-
-**$100 across 50 paid places**: 1st $20, 2nd $12, 3rd $6, 4th–10th $2,
-11th–50th $1.20. Bounty closes **Sunday 29 November 2026, 07:00 WIB**.
-
-See `TRANSCRIPTS.md` for the full v1–v9 build log, the honest date caveats,
-and the verification notes.
+MIT — see LICENSE.
